@@ -1,0 +1,40 @@
+<%- include("hello")%>
+<div class="d-flex justify-content-center p-5">
+    <div class="d-flex  px-5  mx-5">
+        <a href="http://localhost:8080/">
+        <i class="bi bi-house px-5 fs-1"></i>
+        </a>
+    </div>
+    <form style="width: 500px;border:1px solid red;margin-right:250px;" class="p-5 rounded" action="http://localhost:8080/login" method="post">
+        <div class="d-flex justify-content-center fs-1">
+    <p>Login with me!</p>
+    </div>
+    <!-- Email input -->
+
+    <div class="form-outline mb-4">
+        <input type="text"name="name" id="name" class="form-control" />
+        <label class="form-label" for="name">Your name</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input type="email" id="form2Example1" name="email" class="form-control" />
+        <label class="form-label" for="form2Example1">Email address</label>
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+        <input type="password" id="form2Example2" name="password" class="form-control" />
+        <label class="form-label" for="form2Example2">Password</label>
+    </div>
+
+   <!-- Submit button -->
+<div class="d-flex justify-content-center">
+    <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+</div>
+    <!-- Register buttons -->
+    <div class="text-center">
+        <p>Not a member?  <a class="text-decoration-none btn text-primary p-0 border-primary" href="/register">Register</a></p>
+    </div>
+</form>
+</div>
+<%- include("footer")%>
